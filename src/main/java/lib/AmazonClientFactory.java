@@ -24,7 +24,7 @@ import com.amazonaws.services.elasticloadbalancing
 public class AmazonClientFactory {
 
   private static AmazonAutoScaling autoScalingClient = Region.getRegion
-      (Regions.US_EAST_1)
+      (Regions.US_WEST_2)
       .createClient(AmazonAutoScalingClient.class, null, null);
 
   /**
