@@ -37,7 +37,7 @@ public class AmazonClientFactory {
     return autoScalingClient;
   }
 
-  private static AmazonEC2 ec2Client = Region.getRegion(Regions.US_EAST_1)
+  private static AmazonEC2 ec2Client = Region.getRegion(Regions.US_WEST_2)
       .createClient(AmazonEC2Client.class, new
           EnvironmentVariableCredentialsProvider(), null);
 
@@ -51,7 +51,7 @@ public class AmazonClientFactory {
   }
 
   private static AmazonElasticLoadBalancing elasticLoadBalancingClient = Region
-      .getRegion(Regions.US_EAST_1)
+      .getRegion(Regions.US_WEST_2)
       .createClient(AmazonElasticLoadBalancingClient.class, null, null);
 
   /**
